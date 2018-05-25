@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/complaint.css">
+    <title>Check status</title>
+  </head>
+  <body>
+    <h1>Enter the following credentials.</h1>
+    <form class="complaint" action="/submitstatus" method="post">
+      <p>
+        <div class="name">
+          <label for="">Name
+          <input type="text" name="emp_name" value="" placeholder="Enter your name" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="phone">
+          <label for="">Phone
+            <input type="text" name="phone_num" value="" placeholder="Enter your phone number" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="email">
+          <label for="">Email
+            <input type="text" name="email" value="" placeholder="Enter your email address" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="compa_type">
+          <label for="">Complaint_type
+          <select name="comp_type" class='comp_type'>
+            <option value="">Select one</option>
+            <option value="Water supply">Water supply</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Office maintanance">Office maintanance</option>
+            <option value="Food">Food</option>
+            <option value="Internet connectivity">Internet connectivity</option>
+          </select>
+          </label>
+        </div>
+      </p>
+      <p>
+        <input type="submit" name="" value="Submit" class='button'>
+      </p>
+    </form>
+
+  </body>
+</html>
