@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/complaint.css">
+    <title>Complaint form</title>
+  </head>
+  <body>
+    <h1>Enter your complaint details.</h1>
+    <form class="complaint" action="/submitcomplaint" method="post">
+      <p>
+        <div class="name">
+          <label for="">Name
+          <input type="text" name="emp_name" value="" placeholder="Enter your name" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="phone">
+          <label for="">Phone
+            <input type="text" name="phone_num" value="" placeholder="Enter your phone number" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="email">
+          <label for="">Email
+            <input type="text" name="email" value="" placeholder="Enter your email address" class='name_'>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="compa_type">
+          <label for="">Complaint type
+          <select name="comp_type" class = 'comp_type'>
+            <option value="1">Select one</option>
+            <option value="Water supply">Water supply</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Office maintanance">Office maintanance</option>
+            <option value="Food">Food</option>
+            <option value="Internet connectivity">Internet connectivity</option>
+          </select>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="designationa">
+          <label for="">Designation
+          <select name="designation" class='designation'>
+            <option value="1">Select one</option>
+            <option value="Analyst">Analyst</option>
+            <option value="Manager">Manager</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Project lead">Project lead</option>
+            <option value="Intern">Intern</option>
+          </select>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class="departmenta">
+          <label for="">Department
+          <select name="department" class='department'>
+            <option value="1">Select one</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Finance">Finance</option>
+            <option value="Management">Management</option>
+            <option value="Sales and Marketing">Sales and Marketing</option>
+            <option value="Customer support
+            ">Customer support</option>
+          </select>
+          </label>
+        </div>
+      </p>
+      <p>
+        <div class='descripa'>  
+        <label for="">Description
+          <textarea name="descrip" rows="4" cols="80" class='textarea'></textarea>
+        </label>
+        </div>
+      </p>
+      <p>
+        <input type="submit" name="" value="Submit" class='button'>
+      </p>
+    </form>
+  </body>
+</html>
